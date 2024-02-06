@@ -8,11 +8,14 @@ cap.set(3, 640)
 cap.set(4, 480)
 
 # Model
-model = YOLO(r'M:/mask/detect/train/weights/best.pt')
+# model = YOLO(r'M:/mask/detect/train/weights/best.pt')
+model = YOLO(r'M:/mask/detect/weapondetction1_train/weights/best.pt')
 # model = YOLO(r'M:/mask/yolo-Weights/yolov8n.pt')
 
 # Object classes
 classNames = ["masked", "unmasked", "masked"]
+classNames = ["weapon"]
+
 
 # Initialize accuracy counters
 total_correct = 0
